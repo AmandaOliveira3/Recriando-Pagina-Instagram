@@ -1,10 +1,6 @@
 :root{
-    --body-bg:#fafafa;
-    --body-color: #555;
-    --link-color: #222;
-    --link-color-hover: #ec5840;
+    --body-color: #202632;/*263238*/
 }
-
 
 *{
     margin: 0;
@@ -18,9 +14,22 @@
 body {
     width: 100%;
     min-height: 100vh;
+    padding: 5px;
     background-color: rgb(243, 243, 243);
-    margin: 0;
-    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+main{
     display: flex;
     justify-content: center;
 }
@@ -30,7 +39,6 @@ body {
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;
 
 }
 
@@ -71,6 +79,7 @@ body {
 
 .instagram-logo {
     height: 3rem;
+    cursor: pointer;
 }
 
 .profile-photo {
@@ -88,13 +97,12 @@ body {
 .instagram-login {
     background-color: #0095f6;
     color: #ffffff;
-    padding: 8px;
+    padding: 7px;
     border-radius: 4px;
 }
 
 .instagram-logout {
     color:#0095f6;
-    margin-top: 1rem;
 }
 
 .not-account {
@@ -104,6 +112,7 @@ body {
 .link-blue {
     color:#0095f6;
     cursor: pointer;
+    margin: 10px;
 }
 
 .get-the-app{
@@ -112,8 +121,11 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.3rem 0;
-    
+    padding: 1.3rem 0; 
+}
+
+.get-app{
+    font-size: 1.0rem;
 }
 
 .download {
@@ -121,13 +133,15 @@ body {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .app-download {
     height: 3rem;
     width: 10rem;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 
 .app-download:nth-child(1){
@@ -137,6 +151,39 @@ body {
 .app-download:nth-child(2){
     background-image: url('./img/googleplay-button.png');
 }
+
+
+#change-theme {
+    display: none;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+.bi-moon, .logo-dark{
+    display: none;
+}
+
+.dark, .dark header {
+    background-color: var(--body-color);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.dark .group{
+    background-color: #263238;
+    border: none;
+}
+
+.dark .bi-sun,.dark .logo-ligth{
+    display: none;
+}
+
+.dark .bi-moon, .dark .logo-dark{
+    display: block;
+}
+
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
@@ -164,3 +211,4 @@ body {
         border: 1px solid transparent;
     }
 }
+    
