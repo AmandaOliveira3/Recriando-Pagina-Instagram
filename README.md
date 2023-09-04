@@ -8,7 +8,8 @@ Esse projeto foi proposto como desafio pelo DIO (digital innovation one) para ap
 
 
 # Autoral
+Além de recriar a pagina inicial do instagram foi adicionado um Dark-theme com Javascript.
 
-#
+
 
 >>>>>>> 16f609b (adicionando o dark-theme)
